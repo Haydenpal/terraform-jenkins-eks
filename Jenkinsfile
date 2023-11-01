@@ -5,12 +5,7 @@ pipeline {
         terraform "terraform"
     }
 
-    environment {
-        AWS_ACCESS_KEY_ID = credentials('AKIASBFWGMKJETKKBIFP')
-        AWS_SECRET_ACCESS_KEY = credentials('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')
-        AWS_DEFAULT_REGION = "us-east-1"
-    }
-
+    
     stages {
         stage('Checkout SCM') {
             steps {
